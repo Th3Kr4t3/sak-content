@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": 1,
+  "version": 2,
   "recovery": [
     {"id": "recovery-001", "tags": ["general"], "en": "One missed day is a pause, not a reset.", "es": "Un día fallado es una pausa, no un reinicio."},
     {"id": "recovery-002", "tags": ["general"], "en": "What you've built is still there.", "es": "Lo que has construido sigue ahí."},
