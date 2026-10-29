@@ -22,6 +22,7 @@ Only words live here, never code or anything about users.
 - `id`: unique and stable. The app remembers which ids it already showed, so changing an id shows that phrase again.
 - `tags`: `general` (any answer) or a barrier: `capability`, `opportunity`, `motivation`, `phone`. The app goes through the barrier's phrases plus the general ones in file order, without repeating until all were shown.
 - `en`, `es`: the text in each language, at most 200 characters. A missing language falls back to English.
+- `reading` (from version 3): short paragraphs for the read-aloud challenge, `{"id": "reading-001", "en": "…", "es": "…"}`, at most 600 characters. The app goes through the ones in the user's reading language, in order. Keep them plain: no quotes, numbers spelled the way people say them, so speech recognition can match the words.
 
 ## Writing guidelines
 
