@@ -50,7 +50,7 @@ If this policy changes, the new version will be published at this address with a
 
 ## Contact
 
-Questions about privacy: miguel--castillo@outlook.es
+Questions about privacy: <a href="mailto:miguel--castillo@outlook.es">miguel&#45;&#45;castillo@outlook.es</a>
 
 ---
 
@@ -104,4 +104,4 @@ Si esta política cambia, la nueva versión se publicará en esta dirección con
 
 ## Contacto
 
-Preguntas sobre privacidad: miguel--castillo@outlook.es
+Preguntas sobre privacidad: <a href="mailto:miguel--castillo@outlook.es">miguel&#45;&#45;castillo@outlook.es</a>
