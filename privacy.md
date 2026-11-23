@@ -4,11 +4,11 @@ title: sak privacy policy
 
 # sak privacy policy
 
-*Last updated: 2026-11-05* · [Español](#es)
+*Last updated: 2026-11-18* · [Español](#es)
 
 sak is a digital wellbeing app: it measures how you use your phone, helps you set limits on apps and track habits, and shows a mascot, Sak, that reminds you of them. This policy explains what data sak uses and where it goes.
 
-**In short: everything sak records stays on your phone. sak has no servers, no accounts, no ads and no analytics.** The only exceptions are the optional AI mode, which you turn on with your own Anthropic key, and downloading content updates.
+**In short: everything sak records stays on your phone. sak has no servers, no accounts, no ads and no analytics.** The only exception is downloading content updates.
 
 ## Data sak uses on your phone
 
@@ -29,18 +29,25 @@ QR challenge: the scanner is Google's code scanner, which runs through Google Pl
 
 ## Data that leaves your phone
 
-1. **Optional AI mode (off by default).** sak asks for your agreement when you turn it on, and says what is sent. If you turn it on in Settings and enter your own Anthropic API key, questions the built-in assistant doesn't understand are sent to Anthropic's Claude API over HTTPS, together with the last few messages of the chat and a short summary: your focus habit, its consistency over the last 4 weeks and today's minutes in apps that have a limit. Settings shows exactly that text. No day-by-day records, other habits, full app list or contact data are sent. Anthropic processes the request under its own terms and privacy policy (https://www.anthropic.com/legal/privacy). Your key is stored only on your phone and is never included in backups or exports.
-2. **Content updates.** sak downloads a public file of tips and challenges (`catalog.json`) from GitHub over HTTPS. This sends no personal data, but GitHub sees your IP address, as with any web request.
+1. **Content updates.** sak downloads a public file of tips and challenges (`catalog.json`) from GitHub over HTTPS. This sends no personal data, but GitHub sees your IP address, as with any web request.
 
 sak doesn't sell or share your data, and doesn't use it for advertising.
 
 ## Backups and export
 
-Android may include sak's data in your own Google backup, except the API key, which is always excluded. In Settings → "Export my data" you can save a JSON copy of everything sak stores, without the API key.
+Android backup. sak allows Android's automatic backup, and its rules exclude only one file: the home-screen widget options (`widgets.xml`).
+Everything else in sak's private storage is included, in both the Google backup (cloud) and the transfer to a new phone over cable or Wi-Fi (device-to-device), because the two sets of rules are identical.
+That covers your habits and their records, your rules (limits and the apps you chose to limit or block, which are stored by app package name), reviews, the log of blocks you overrode, message budget, challenges, points, tips, and settings (including your name or nickname and Sak's name), plus the last crash report and the downloaded content cache.
+Android's own app-usage history stays in Android and isn't part of sak's backup; only what sak itself saved is: for example the daily amount of an app habit, inside your habit records, and the last 28 days of each app's time, number of openings and longest stretch, which sak keeps on the phone for per-app statistics and includes in "Export my data".
+The Google backup is stored by Google under your Google account, and Google's terms decide how it is protected and for how long; sak doesn't control it and doesn't see it.
+A restore on a new phone brings this data back, but not the widget options, which you set up again.
+You can turn Google backup off in Android's settings.
+In Settings → "Export my data" you can save a JSON copy of everything sak stores, and "Import my data" reads that same file back from a place you pick (it replaces the data on the phone; nothing is sent anywhere).
+If you choose a background picture (Settings → Appearance), sak keeps a small copy of it in its own private storage; it is not part of the exported file and is never sent anywhere, and sak asks for no access to your photos (the system picker hands over only the picture you pick). sak keeps the last crash on the phone (Settings → "Your data") and sends it nowhere unless you choose to share it.
 
 ## Deleting your data
 
-Deleting a habit in the Habits tab removes its records. Uninstalling sak, or clearing its storage in Android's settings, deletes all of its data from the phone. Since sak has no servers, there is nothing else to delete.
+Deleting a habit in the Today tab removes its records. Uninstalling sak, or clearing its storage in Android's settings, deletes all of its data from the phone. Since sak has no servers, there is nothing else to delete.
 
 ## Children
 
@@ -60,11 +67,11 @@ Questions about privacy: <a href="mailto:miguel--castillo@outlook.es">miguel&#45
 
 # Política de privacidad de sak
 
-*Última actualización: 05-11-2026*
+*Última actualización: 18-11-2026*
 
 sak es una app de bienestar digital: mide cómo usas el teléfono, te ayuda a poner límites a las apps y a seguir hábitos, y muestra una mascota, Sak, que te los recuerda. Esta política explica qué datos usa sak y adónde van.
 
-**En resumen: todo lo que sak registra se queda en tu teléfono. sak no tiene servidores, cuentas, anuncios ni analíticas.** Las únicas excepciones son el modo de IA opcional, que activas con tu propia clave de Anthropic, y la descarga de actualizaciones de contenido.
+**En resumen: todo lo que sak registra se queda en tu teléfono. sak no tiene servidores, cuentas, anuncios ni analíticas.** La única excepción es la descarga de actualizaciones de contenido.
 
 ## Datos que sak usa en tu teléfono
 
@@ -85,18 +92,24 @@ Reto QR: el lector es el escáner de códigos de Google, que funciona con los se
 
 ## Datos que salen de tu teléfono
 
-1. **Modo de IA opcional (desactivado por defecto).** sak te pide tu consentimiento al activarlo y te dice qué se envía. Si lo activas en Ajustes y escribes tu propia clave de API de Anthropic, las preguntas que el asistente integrado no entiende se envían por HTTPS a la API de Claude de Anthropic, junto con los últimos mensajes del chat y un resumen corto: tu hábito foco, su constancia en las últimas 4 semanas y los minutos de hoy en apps con límite. Ajustes muestra exactamente ese texto. No se envían registros día a día, otros hábitos, la lista completa de apps ni datos de contacto. Anthropic procesa la solicitud según sus propios términos y política de privacidad (https://www.anthropic.com/legal/privacy). Tu clave se guarda solo en tu teléfono y nunca se incluye en copias de seguridad ni exportaciones.
-2. **Actualizaciones de contenido.** sak descarga de GitHub, por HTTPS, un archivo público de consejos y retos (`catalog.json`). No se envían datos personales, pero GitHub ve tu dirección IP, como en cualquier solicitud web.
+1. **Actualizaciones de contenido.** sak descarga de GitHub, por HTTPS, un archivo público de consejos y retos (`catalog.json`). No se envían datos personales, pero GitHub ve tu dirección IP, como en cualquier solicitud web.
 
 sak no vende ni comparte tus datos, y no los usa para publicidad.
 
 ## Copias de seguridad y exportación
 
-Android puede incluir los datos de sak en tu propia copia de seguridad de Google, salvo la clave de API, que siempre se excluye. En Ajustes → "Exportar mis datos" puedes guardar una copia en JSON de todo lo que sak almacena, sin la clave de API.
+Copia de seguridad de Android. sak permite la copia de seguridad automática de Android y sus reglas excluyen un solo archivo: las opciones de los widgets de la pantalla de inicio (`widgets.xml`).
+Todo lo demás del almacenamiento privado de sak se incluye, tanto en la copia de Google (nube) como en la transferencia a un teléfono nuevo por cable o Wi-Fi (de dispositivo a dispositivo), porque las dos reglas son idénticas.
+Eso abarca tus hábitos y sus registros, tus reglas (límites y las apps que elegiste limitar o bloquear, guardadas por nombre de paquete), revisiones, el registro de bloqueos que saltaste, presupuesto de mensajes, retos, puntos, consejos y ajustes (incluidos tu nombre o apodo y el nombre de Sak), además del último informe de fallo y la caché del contenido descargado.
+El historial de uso de apps de Android se queda en Android y no forma parte de la copia de sak; solo va lo que sak guardó por su cuenta: por ejemplo la cantidad diaria de un hábito de app, dentro de tus registros de hábitos, y los últimos 28 días de tiempo, aperturas y rato más largo de cada app, que sak guarda en el teléfono para las estadísticas por app y que entra en "Exportar mis datos".
+Google guarda la copia en tu cuenta de Google y sus condiciones deciden cómo se protege y durante cuánto tiempo; sak no la controla ni la ve.
+Al restaurar en un teléfono nuevo vuelven estos datos, pero no las opciones de los widgets, que configuras de nuevo.
+Puedes desactivar la copia de Google en los ajustes de Android.
+En Ajustes → "Exportar mis datos" puedes guardar una copia en JSON de todo lo que sak almacena, y "Importar mis datos" lee ese mismo archivo desde un lugar que eliges (reemplaza los datos del teléfono; no se envía nada a ningún sitio). sak guarda el último fallo en el teléfono (Ajustes → "Tus datos") y no lo envía a ningún sitio salvo que tú elijas compartirlo.
 
 ## Borrar tus datos
 
-Eliminar un hábito en la pestaña Hábitos borra sus registros. Desinstalar sak, o borrar su almacenamiento en los ajustes de Android, elimina todos sus datos del teléfono. Como sak no tiene servidores, no hay nada más que borrar.
+Eliminar un hábito en la pestaña Hoy borra sus registros. Desinstalar sak, o borrar su almacenamiento en los ajustes de Android, elimina todos sus datos del teléfono. Como sak no tiene servidores, no hay nada más que borrar.
 
 ## Menores
 
